@@ -1,0 +1,18 @@
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: Pet Service
+  license:
+    name: MIT
+paths:
+  /pet:
+    get:
+      summary: Get random pet
+      operationId: getPet
+      tags:
+        - pet
+      responses:
+        "200":
+          description: A random pet
+        default:
+          description: unexpected error
